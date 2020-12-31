@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="false" thread-count="1">
+<parameter name="driverName" value="Chrome"></parameter>
+<!--<test verbose="2" preserve-order="true" name="执行登录测试">
+    <parameter name="TestDataExcelFileSheet" value="Sheet1"></parameter>
+    <classes>
+        <class name="fan.selenium.testMode.TestSC.TestCase">
+            <methods>
+                <include name="testEC"/>
+            </methods>
+        </class>
+    </classes>
+</test>-->
+    <test verbose="2" preserve-order="true" name="直接登录">
+        <parameter name="TestDataExcelFileSheet" value="Sheet1"></parameter>
+        <classes>
+            <class name="fan.selenium.testMode.TestSC.TestCase">
+                <methods>
+                    <include name="testEC"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+</suite>
